@@ -1,8 +1,17 @@
+import Thumbnail from "../Tumbnail/Thumbnail";
+
+
 function Results ({ results }) {
+
+  console.log('results', results.results);
+
   return (
     <div>
-      <h1>This is the result page</h1>
-      <p>And this is the first paragraph</p>
+      {
+        results.results.map(result => (
+          <Thumbnail key={ result.id } result={ result } />
+        ))
+      }
     </div>
   )
 }
