@@ -1,10 +1,11 @@
 import Thumbnail from "../Tumbnail/Thumbnail";
+import FlipMove from "react-flip-move";
 
 
 function Results (props) {
 
   return (
-    <div className="
+    <FlipMove className="
       px-5
       my-10
       sm:grid
@@ -17,7 +18,7 @@ function Results (props) {
           <Thumbnail key={ result.id } result={ result } />
         ))
       }
-    </div>
+    </FlipMove>
   )
 }
 
